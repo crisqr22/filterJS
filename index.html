@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FilterJS</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Bootstrap -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="jumbotron">
+      <center><h1>Aplicación News con JS</h1></center>
+    </div>
+    <div class="container">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">Año</div>            
+              <select id="year" class="form-control">
+                <option>2014</option>
+                <option>2013</option>
+              </select>            
+          </div>
+        </div> 
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">Campaña</div>            
+              <select id="camp"  class="form-control">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+              </select>            
+          </div>
+        </div>        
+        <button id="btnsearch" type="submit" class="btn btn-primary">Buscar</button>
+      </form>      
+    </div>
+    <div class="container ">
+      <div class="render"></div>
+      <div class="box col-md-12">
+        <article ano="2014" campana="03" fecha="2014-07-01">
+          <h1>Titulo Noticia</h1>
+          <p>Resumen Noticia 2014-07-01 (campaña 03)</p>
+          <p>Contenido Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales metus non dictum ultrices. Suspendisse at pulvinar justo. Aenean sagittis massa tincidunt nisl commodo, ut tempus nisi posuere. Aliquam eu dui ut elit convallis rhoncus. Donec et gravida elit. Duis tempus turpis non urna elementum, sed blandit lectus gravida. Aliquam congue dolor in porta iaculis.</p>
+        </article>
+        <article ano="2014" campana="02" fecha="2014-05-20">
+          <h1>Titulo Noticia </h1>
+          <p>Resumen Noticia 2014-05-20 (campaña 02)</p>
+          <p>Contenido Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales metus non dictum ultrices. Suspendisse at pulvinar justo. Aenean sagittis massa tincidunt nisl commodo, ut tempus nisi posuere. Aliquam eu dui ut elit convallis rhoncus. Donec et gravida elit. Duis tempus turpis non urna elementum, sed blandit lectus gravida. Aliquam congue dolor in porta iaculis.</p>
+        </article>
+        <article ano="2014" campana="02" fecha="2014-02-20">
+          <h1>Titulo Noticia </h1>
+          <p>Resumen Noticia 2014-02-20 (campaña 02)</p>
+          <p>Contenido Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales metus non dictum ultrices. Suspendisse at pulvinar justo. Aenean sagittis massa tincidunt nisl commodo, ut tempus nisi posuere. Aliquam eu dui ut elit convallis rhoncus. Donec et gravida elit. Duis tempus turpis non urna elementum, sed blandit lectus gravida. Aliquam congue dolor in porta iaculis.</p>
+        </article>        
+        <article ano="2013" campana="02" fecha="2013-05-07">
+          <h1>Titulo Noticia </h1>
+          <p>Resumen Noticia 2013-05-07 (campaña 02)</p>
+          <p>Contenido Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales metus non dictum ultrices. Suspendisse at pulvinar justo. Aenean sagittis massa tincidunt nisl commodo, ut tempus nisi posuere. Aliquam eu dui ut elit convallis rhoncus. Donec et gravida elit. Duis tempus turpis non urna elementum, sed blandit lectus gravida. Aliquam congue dolor in porta iaculis.</p>
+        </article>
+        <article ano="2014" campana="04" fecha="2014-10-07">
+          <h1>Titulo Noticia </h1>
+          <p>Resumen Noticia 2014-10-07 (campaña 04)</p>
+          <p>Contenido Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales metus non dictum ultrices. Suspendisse at pulvinar justo. Aenean sagittis massa tincidunt nisl commodo, ut tempus nisi posuere. Aliquam eu dui ut elit convallis rhoncus. Donec et gravida elit. Duis tempus turpis non urna elementum, sed blandit lectus gravida. Aliquam congue dolor in porta iaculis.</p>
+        </article>
+        <article ano="2013" campana="01" fecha="2013-03-05">
+          <h1>Titulo Noticia  </h1>
+          <p>Resumen Noticia 2013-03-05 (campaña 01)</p>
+          <p>Contenido Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales metus non dictum ultrices. Suspendisse at pulvinar justo. Aenean sagittis massa tincidunt nisl commodo, ut tempus nisi posuere. Aliquam eu dui ut elit convallis rhoncus. Donec et gravida elit. Duis tempus turpis non urna elementum, sed blandit lectus gravida. Aliquam congue dolor in porta iaculis.</p>
+        </article>
+        <article ano="2013" campana="03" fecha="2013-10-07">
+          <h1>Titulo Noticia </h1>
+          <p>Resumen Noticia 2013-10-07 (campaña 03)</p>
+          <p>Contenido Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales metus non dictum ultrices. Suspendisse at pulvinar justo. Aenean sagittis massa tincidunt nisl commodo, ut tempus nisi posuere. Aliquam eu dui ut elit convallis rhoncus. Donec et gravida elit. Duis tempus turpis non urna elementum, sed blandit lectus gravida. Aliquam congue dolor in porta iaculis.</p>
+        </article>
+        <article ano="2014" campana="01" fecha="2014-03-17">
+          <h1>Titulo Noticia </h1>
+          <p>Resumen Noticia 2014-03-17 (campaña 01)</p>
+          <p>Contenido Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales metus non dictum ultrices. Suspendisse at pulvinar justo. Aenean sagittis massa tincidunt nisl commodo, ut tempus nisi posuere. Aliquam eu dui ut elit convallis rhoncus. Donec et gravida elit. Duis tempus turpis non urna elementum, sed blandit lectus gravida. Aliquam congue dolor in porta iaculis.</p>
+        </article>
+        <article ano="2014" campana="05" fecha="2014-03-17">
+          <h1>Titulo Noticia </h1>
+          <p>Resumen Noticia 2014-03-17 (campaña 05)</p>
+          <p>Contenido Noticia: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales metus non dictum ultrices. Suspendisse at pulvinar justo. Aenean sagittis massa tincidunt nisl commodo, ut tempus nisi posuere. Aliquam eu dui ut elit convallis rhoncus. Donec et gravida elit. Duis tempus turpis non urna elementum, sed blandit lectus gravida. Aliquam congue dolor in porta iaculis.</p>
+        </article>
+
+
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/filter.js"></script>
+  </body>
+</html>
